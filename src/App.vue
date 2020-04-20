@@ -24,6 +24,7 @@
                 app
                 dark
         >
+            © 2020 Pavel Šeps - <a href="https://github.com/pavelseps/rsa-playground" target="_blank" class="ml-1">github.com/pavelseps/rsa-playground</a>
         </v-footer>
 
     </v-app>
