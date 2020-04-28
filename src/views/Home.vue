@@ -299,7 +299,7 @@
 
         goToDecrypt() {
             let routeData = this.$router.resolve({
-                name: 'DecryptMessaging',
+                name: 'DecryptTextMessaging',
                 params: {m: this.m !== null ? this.m + "" : "", y: this.y !== null ? this.y + "" : ""}
             });
             window.open(routeData.href, '_blank');
@@ -307,7 +307,7 @@
 
         goToEncrypt() {
             let routeData = this.$router.resolve({
-                name: 'EncryptMessaging',
+                name: 'EncryptTextMessaging',
                 params: {m: this.m !== null ? this.m + "" : "", i: this.i !== null ? this.i + "" : ""}
             });
             window.open(routeData.href, '_blank');

@@ -10,19 +10,31 @@ const routes = [
         path: '/messaging',
         name: 'Messaging',
         component: Messaging,
-        meta: { encrypt: false, decrypt: false }
+        meta: { encrypt: false, decrypt: false, text: false }
     },
     {
         path: '/encrypt/:m/:i',
         name: 'EncryptMessaging',
         component: Messaging,
-        meta: { encrypt: true, decrypt: false }
+        meta: { encrypt: true, decrypt: false, text: false }
     },
     {
         path: '/decrypt/:m/:y',
         name: 'DecryptMessaging',
         component: Messaging,
-        meta: { encrypt: false, decrypt: true }
+        meta: { encrypt: false, decrypt: true, text: false }
+    },
+    {
+        path: '/text/encrypt/:m/:i',
+        name: 'EncryptTextMessaging',
+        component: Messaging,
+        meta: { encrypt: true, decrypt: false, text: true }
+    },
+    {
+        path: '/text/decrypt/:m/:y',
+        name: 'DecryptTextMessaging',
+        component: Messaging,
+        meta: { encrypt: false, decrypt: true, text: true }
     },
     {
         path: '/',
