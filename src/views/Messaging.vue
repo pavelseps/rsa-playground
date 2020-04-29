@@ -219,7 +219,7 @@
                 if (!isNaN(y)){
                     this.y = y;
                 } else {
-                    this.textY = this.$route.params.y;
+                    this.textY = this.$route.query.text + "";
                 }
 
                 this.tab = "tab-2";
@@ -251,6 +251,9 @@
                 params: {
                     m: this.m !== null ? this.m + "" : "",
                     y
+                },
+                query: {
+                    text: y
                 }
             }).href;
         }

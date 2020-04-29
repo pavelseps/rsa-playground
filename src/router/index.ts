@@ -31,7 +31,7 @@ const routes = [
         meta: { encrypt: true, decrypt: false, text: true }
     },
     {
-        path: '/text/decrypt/:m/:y',
+        path: '/text/decrypt/:m',
         name: 'DecryptTextMessaging',
         component: Messaging,
         meta: { encrypt: false, decrypt: true, text: true }
