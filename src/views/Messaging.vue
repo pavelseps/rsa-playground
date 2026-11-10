@@ -194,7 +194,7 @@
 
 
         mounted(){
-            if (this.$route.meta.encrypt){
+            if (this.$route.meta?.encrypt){
                 let m = parseInt(this.$route.params.m);
                 let i = parseInt(this.$route.params.i);
 
@@ -208,7 +208,7 @@
 
                 this.tab = "tab-1";
             }
-            if (this.$route.meta.decrypt){
+            if (this.$route.meta?.decrypt){
                 let m = parseInt(this.$route.params.m);
                 let y = parseInt(this.$route.params.y);
 
@@ -234,7 +234,7 @@
         }
 
         get isText(){
-            return this.$route.meta.text;
+            return this.$route.meta?.text;
         }
 
         get messageUrl(){
