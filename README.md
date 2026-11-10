@@ -1,5 +1,8 @@
 # rsa-playground
 
+RSA crypto playground (Vue 2 + Vuetify), deployed at https://rsa-playground.pavelseps.com
+as a Cloudflare Worker with static assets (see `wrangler.jsonc`).
+
 ## Project setup
 ```
 yarn install
@@ -7,23 +10,15 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+yarn build
 ```
 
-### Run your tests
+### Build and deploy to Cloudflare
 ```
-yarn run test
+yarn deploy
 ```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
